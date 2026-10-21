@@ -37,18 +37,12 @@
           "time": "6:00 PM",
           "type": "Orientation",
           "title": "Welcome & Orientation: Vietnam's Healthcare Journey",
-          "speaker": "Dr Sayanta Jana",
-          "role": "Academic Dean",
-          "organisation": "Australian Doctors Business Academy",
           "description": "Introduction to Vietnamese healthcare leaders and Australian faculty. Overview of tour itinerary, learning expectations, and CPD accreditation pathways."
         },
         {
           "time": "6:30 PM",
           "type": "Keynote",
           "title": "Opening Keynote: Vietnam's Universal Health Journey — Laying Digital Foundations for Equitable Care",
-          "speaker": "Dr. Tran Van Thuan (TBC)",
-          "role": "Deputy Minister of Health",
-          "organisation": "Ministry of Health, Vietnam",
           "description": "National policy landscape, universal coverage milestones, and national digital health strategic directions."
         },
         {
@@ -71,9 +65,6 @@
           "time": "9:00 AM",
           "type": "Keynote",
           "title": "Keynote Session 1: Universal Health Coverage on the Front Lines — Lessons from Da Nang Hospital's Transformation Journey",
-          "speaker": "Dr. Le Duc Nhan (TBC)",
-          "role": "Director",
-          "organisation": "Da Nang Hospital (Benh Vien Da Nang), Vietnam",
           "description": "Frontline operational perspective on balancing clinical complexity, high patient volumes, and universal health insurance."
         },
         {
@@ -87,20 +78,12 @@
           "time": "10:30 AM",
           "type": "Keynote",
           "title": "Keynote Session 2: Financing Universal Health — Building Sustainable Models for Equitable Access in Vietnam",
-          "speaker": "Dr. Nguyen Truong Son (TBC)",
-          "role": "Former Vice Minister of Health",
-          "organisation": "Ministry of Health, Vietnam",
           "description": "Reimbursement mechanisms, social health insurance solvency, and financial sustainability frameworks."
         },
         {
           "time": "11:15 AM",
           "type": "Panel",
           "title": "Panel Discussion & Interactive Q&A",
-          "chair": "Dr Nabrees Sinnalebbe (FRACMA, FACHSM - Mildura Base Public Hospital, NSW)",
-          "panelists": [
-            "Dr. Le Duc Nhan (Director, Da Nang Hospital)",
-            "Dr. Nguyen Truong Son (Former Vice Minister of Health, Vietnam)"
-          ],
           "description": "Cross-comparative analysis of public healthcare financing and resource constraints in Australia vs. Vietnam."
         },
         {
@@ -140,9 +123,6 @@
           "time": "7:00 PM",
           "type": "Dining",
           "title": "Dinner at The Summit Room & Featured Civic Address",
-          "speaker": "Mr. Le Trung Chinh",
-          "role": "Chairman",
-          "organisation": "People's Committee of Danang City",
           "topic": "Danang's Vision: Building a Smart, Healthy, and Inclusive City for the Future",
           "description": "Official city leadership dinner highlighting urban health development and foreign cooperation."
         }
@@ -159,9 +139,6 @@
           "time": "9:00 AM",
           "type": "Keynote",
           "title": "Keynote Session 3: Bridging the Gap — How Digital Health and Telemedicine are Transforming Patient Care at Vinmec Da Nang",
-          "speaker": "Dr. Nguyen Huu Thien (TBC)",
-          "role": "Medical Director",
-          "organisation": "Vinmec Da Nang International Hospital",
           "description": "Case study on private tertiary care telemedicine networks, electronic medical records, and digital triage."
         },
         {
@@ -175,20 +152,12 @@
           "time": "10:30 AM",
           "type": "Keynote",
           "title": "Keynote Session 4: Beyond Boundaries — Public-Private Collaboration and Digital Innovation in Vietnam's Health Sector",
-          "speaker": "Dr. Vuong Quoc Duy (TBC)",
-          "role": "Head of Telemedicine / IT",
-          "organisation": "Vinmec Healthcare System",
           "description": "Architectures for health tech adoption, AI diagnostics, interoperability, and enterprise health data governance."
         },
         {
           "time": "11:15 AM",
           "type": "Panel",
           "title": "Panel Discussion & Interactive Q&A",
-          "chair": "Dr Neel Gobin (Hunter New England Health, Australia)",
-          "panelists": [
-            "Dr. Nguyen Huu Thien (Vinmec Da Nang)",
-            "Dr. Vuong Quoc Duy (Vinmec Healthcare System)"
-          ],
           "description": "Translating private-sector digital agility into public hospital and outpatient clinical environments."
         },
         {
@@ -306,9 +275,6 @@
           "time": "9:00 AM",
           "type": "Keynote",
           "title": "Keynote Session 5: Integrating Public and Private Care — Building Sustainable Primary Health Models in Vietnam",
-          "speaker": "Dr Rafi Kot (TBC)",
-          "role": "Founder and Medical Director",
-          "organisation": "Family Medical Practice Vietnam",
           "description": "Three decades of experience establishing international standard primary care, emergency response, and bilingual clinics in Vietnam."
         },
         {
@@ -322,20 +288,12 @@
           "time": "10:30 AM",
           "type": "Keynote",
           "title": "Keynote Session 6: Scaling Quality Care — Private Sector Innovations and Community Impact at Pasteur General Clinic",
-          "speaker": "Dr. Nguyen Van Anh (TBC)",
-          "role": "Director",
-          "organisation": "Pasteur General Clinic (Danang)",
           "description": "Operational scalability, diagnostic imaging investments, and outpatient patient retention in regional urban centers."
         },
         {
           "time": "11:15 AM",
           "type": "Panel",
           "title": "Panel Discussion & Interactive Q&A",
-          "chair": "Dr Siobhain Brennan (BSc, PhD, MBBS, DCH, FRACGP, GAICD - GP, Western Australia)",
-          "panelists": [
-            "Dr Rafi Kot (Founder, Family Medical Practice Vietnam)",
-            "Dr. Nguyen Van Anh (Director, Pasteur General Clinic Danang)"
-          ],
           "description": "Comparing primary practice models: Private billing in Australia vs. consumer out-of-pocket dynamics in Vietnam."
         },
         {
@@ -445,9 +403,6 @@
           "time": "7:15 PM",
           "type": "Closing",
           "title": "Closing Remarks & Study Tour Wrap-Up",
-          "speaker": "Dr Sayanta Jana",
-          "role": "Academic Dean",
-          "organisation": "Australian Doctors Business Academy",
           "description": "Summary of Vietnam Study Tour key learnings, CPD certificate conferral framework, and official announcement of the 2027 Study Tour."
         },
         {
@@ -513,19 +468,16 @@
     ]
   },
   "partners": {
-    "travelPartner": {
-      "name": "Flight Centre Business and First Class (Perth)",
-      "role": "Official Australian Travel Partner",
-      "logo": "assets/images/flight-centre-logo.jpg",
-      "contactPhone": "08 6144 7780",
-      "description": "Specialised First and Business Class travel consultants ready to handle flights, extensions, and tailored travel needs."
+    "organiser": {
+      "name": "Australian Doctors Business Academy (ADBA)",
+      "role": "Organiser & Academic Host",
+      "logo": "assets/images/adba-logo.png",
+      "website": "https://doctorsbusinessacademy.com.au/"
     },
-    "sightseeingPartner": {
-      "name": "Indochina Heritage Travel Group",
-      "role": "Official Vietnam Sightseeing & DMC Partner",
-      "logo": "assets/images/indochina-heritage-logo.webp",
-      "website": "https://indochinaheritage.com/",
-      "description": "Award-winning full-service destination management company with 15+ years of regional MICE and luxury travel expertise."
+    "strategicPartner": {
+      "name": "Lion Huynh Tran",
+      "role": "Local Strategic Partner",
+      "logo": "assets/images/partners/lion-huynh-tran.png"
     }
   }
 }

@@ -28,8 +28,9 @@ function initI18n() {
   // Bind language switcher buttons
   const langBtns = document.querySelectorAll('.lang-btn');
   langBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      const selectedLang = btn.dataset.lang;
+    btn.addEventListener('click', (e) => {
+      const targetBtn = e.currentTarget || e.target.closest('.lang-btn') || btn;
+      const selectedLang = targetBtn.dataset.lang;
       if (selectedLang && selectedLang !== currentLang) {
         currentLang = selectedLang;
         localStorage.setItem('adba_lang', currentLang);
@@ -174,18 +175,49 @@ function initBackToTop() {
 function initMobileMenu() {
   const btn = document.querySelector('.mobile-menu-btn');
   const nav = document.querySelector('.nav-links');
+  const header = document.querySelector('.site-header');
   if (!btn || !nav) return;
 
-  btn.addEventListener('click', () => {
-    btn.classList.toggle('active');
-    nav.classList.toggle('active');
+  function closeMenu() {
+    btn.classList.remove('active');
+    nav.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function openMenu() {
+    btn.classList.add('active');
+    nav.classList.add('active');
+    document.body.style.overflow = 'hidden';
+    if (header) header.classList.remove('header-hidden');
+  }
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = nav.classList.contains('active');
+    if (isOpen) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
   });
 
   nav.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
-      btn.classList.remove('active');
-      nav.classList.remove('active');
+      closeMenu();
     });
+  });
+
+  // Close on Escape or click outside
+  document.addEventListener('click', (e) => {
+    if (nav.classList.contains('active') && !nav.contains(e.target) && !btn.contains(e.target)) {
+      closeMenu();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav.classList.contains('active')) {
+      closeMenu();
+    }
   });
 }
 
@@ -270,12 +302,23 @@ function openSpeakerDetailsModal(speaker, lang) {
     badgesBox.innerHTML = badges.map(b => `<span class="speaker-pill speaker-pill-gold">${b}</span>`).join('');
   }
 
-  if (sessionEl) {
-    sessionEl.textContent = isVi ? (speaker.sessionVi || speaker.sessionEn) : speaker.sessionEn;
+  const sessionBox = document.getElementById('speaker-modal-session-box');
+  const sessionText = isVi ? (speaker.sessionVi || speaker.sessionEn) : speaker.sessionEn;
+  if (sessionBox) {
+    if (sessionText) {
+      sessionBox.style.display = 'block';
+      if (sessionEl) sessionEl.textContent = sessionText;
+    } else {
+      sessionBox.style.display = 'none';
+    }
   }
 
   if (bioEl) {
-    bioEl.innerHTML = isVi ? (speaker.bioVi || speaker.bioEn) : speaker.bioEn;
+    const rawBio = isVi ? (speaker.bioVi || speaker.bioEn || '') : (speaker.bioEn || '');
+    bioEl.innerHTML = rawBio
+      .split('\n\n')
+      .map(p => `<p style="margin-bottom: 12px; line-height: 1.68;">${p.replace(/\n/g, '<br>')}</p>`)
+      .join('');
   }
 
   modal.classList.add('open');
@@ -353,9 +396,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Định hướng",
         titleEn: "Welcome & Orientation: Vietnam's Healthcare Journey — Universal Coverage and Digital Momentum",
         titleVi: "Định hướng Học thuật: Hành trình Chuyển đổi Y tế Việt Nam — Bảo hiểm Toàn dân & Đột phá Số hóa",
-        speaker: "Dr Sayanta Jana",
-        role: "Academic Dean",
-        org: "Australian Doctors Business Academy",
         descEn: "Introduction to Vietnamese healthcare leaders and Australian faculty. In-depth briefing on the week's learning objectives, expectations, and AMA CPD accreditation guidelines across EA, RP, and MO domains.",
         descVi: "Giới thiệu các chuyên gia y tế Việt Nam và ban giảng huấn Úc. Phổ biến chi tiết mục tiêu học tập, yêu cầu chuyên môn và hướng dẫn tích lũy 15 giờ tín chỉ AMA CPD Home (EA, RP, MO)."
       },
@@ -366,9 +406,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Khóa chính Khai mạc",
         titleEn: "Opening Keynote: Vietnam's Universal Health Journey — Laying Digital Foundations for Equitable Care",
         titleVi: "Báo cáo Khai mạc: Hành trình Y tế Toàn dân tại Việt Nam — Đặt Nền tảng Số hóa cho Tiếp cận Y tế Công bằng",
-        speaker: "Dr. Tran Van Thuan (TBC)",
-        role: "Deputy Minister of Health",
-        org: "Ministry of Health, Vietnam",
         descEn: "National health reform roadmap, social health insurance expansion, and macro digital health directives across primary and tertiary healthcare tiers.",
         descVi: "Chiến lược cải cách y tế quốc gia, lộ trình mở rộng bảo hiểm y tế toàn dân và định hướng chuyển đổi số y tế từ cơ sở đến tuyến trung ương."
       },
@@ -403,9 +440,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Phiên 1",
         titleEn: "Keynote Session 1: Universal Health Coverage on the Front Lines — Lessons from Da Nang Hospital's Transformation Journey",
         titleVi: "Khóa chính 1: Bảo hiểm Y tế Toàn dân Tuyến đầu — Bài học từ Hành trình Đổi mới của Bệnh viện Đà Nẵng",
-        speaker: "Dr. Le Duc Nhan (TBC)",
-        role: "Director",
-        org: "Da Nang Hospital (Benh Vien Da Nang), Vietnam",
         descEn: "Operational realities of managing high-volume acute inpatient flow under universal health insurance.",
         descVi: "Thực tiễn điều hành luồng bệnh nhân cấp cứu và điều trị nội trú quy mô lớn dưới chính sách BHYT toàn dân."
       },
@@ -426,9 +460,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Phiên 2",
         titleEn: "Keynote Session 2: Financing Universal Health — Building Sustainable Models for Equitable Access in Vietnam",
         titleVi: "Khóa chính 2: Tài chính Y tế Toàn dân — Xây dựng Mô hình Bền vững cho Tiếp cận Công bằng tại Việt Nam",
-        speaker: "Dr. Nguyen Truong Son (TBC)",
-        role: "Former Vice Minister of Health",
-        org: "Ministry of Health, Vietnam",
         descEn: "Sustainable financing architectures, social health insurance solvency, and public hospital financial autonomy.",
         descVi: "Cơ cấu tài chính bền vững, quỹ bảo hiểm y tế và cơ chế tự chủ tài chính tại các bệnh viện công lập."
       },
@@ -439,8 +470,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Tọa đàm",
         titleEn: "Panel Discussion & Interactive Q&A: Public Hospital Triage and Funding Realities",
         titleVi: "Tọa đàm Đối thoại: Phân luồng Bệnh viện Công & Thực tiễn Nguồn vốn",
-        speaker: "Dr Nabrees Sinnalebbe (Chair)",
-        role: "Mildura Base Public Hospital, NSW",
         descEn: "Structured discussion with Dr. Le Duc Nhan and Dr. Nguyen Truong Son comparing emergency department triage, clinical governance, and funding challenges between Australian public health and Vietnamese tertiary hospitals.",
         descVi: "Tọa đàm chuyên sâu cùng TS. Lê Đức Nhân và PGS. Nguyễn Trường Sơn, so sánh phân luồng cấp cứu, quản trị lâm sàng giữa hệ thống y tế công lập Úc và Việt Nam."
       },
@@ -471,8 +500,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Khảo sát thực tế",
         titleEn: "Guided Hospital Clinical Tour & Behind-the-Scenes Inspection",
         titleVi: "Khảo sát Lâm sàng Thực tế & Tham quan Bệnh viện Đà Nẵng",
-        speaker: "Executives and Clinical Leads",
-        org: "Da Nang Hospital | ADBA Lead: Dr Anand Ponniraivan",
         descEn: "Comprehensive walk-through of emergency resuscitation, ICU, inpatient ward management, and high-throughput diagnostic imaging.",
         descVi: "Khảo sát trực tiếp khu vực hồi sức cấp cứu, khoa ICU, quy trình điều trị nội trú và trung tâm chẩn đoán hình ảnh kỹ thuật cao."
       },
@@ -483,9 +510,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Tiệc tối Summit",
         titleEn: "Dinner & Featured Keynote: Danang's Vision for Smart & Healthy City",
         titleVi: "Tiệc tối & Bài nói Đặc biệt: Tầm nhìn Đô thị Y tế Thông minh Đà Nẵng",
-        speaker: "Mr. Le Trung Chinh",
-        role: "Chairman",
-        org: "People's Committee of Danang City",
         location: "The Summit Room, Marriott Courtyard",
         descEn: "Official address on Danang's strategic transition into an international innovation, smart city, and premier medical wellness tourism hub.",
         descVi: "Bài phát biểu chính thức về định hướng đưa Đà Nẵng thành đô thị thông minh, đổi mới sáng tạo và trung tâm du lịch chăm sóc sức khỏe quốc tế."
@@ -510,9 +534,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Phiên 3",
         titleEn: "Keynote Session 3: Bridging the Gap — How Digital Health and Telemedicine are Transforming Patient Care at Vinmec Da Nang",
         titleVi: "Khóa chính 3: Rút ngắn Khoảng cách — Y tế Số & Telemedicine Chuyển đổi Điều trị tại Vinmec Đà Nẵng",
-        speaker: "Dr. Nguyen Huu Thien (TBC)",
-        role: "Medical Director",
-        org: "Vinmec Da Nang International Hospital",
         descEn: "Examining digital hospital operations, patient-facing apps, electronic health records, and remote specialist consults.",
         descVi: "Tìm hiểu quy trình vận hành bệnh viện số, ứng dụng sức khỏe cho người bệnh, bệnh án điện tử và hội chẩn chuyên gia từ xa."
       },
@@ -523,9 +544,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Phiên 4",
         titleEn: "Keynote Session 4: Beyond Boundaries — Public-Private Collaboration and Digital Innovation in Vietnam's Health Sector",
         titleVi: "Khóa chính 4: Vượt qua Ranh giới — Hợp tác Công - Tư & Đổi mới Số hóa trong Ngành Y tế Việt Nam",
-        speaker: "Dr. Vuong Quoc Duy (TBC)",
-        role: "Head of Telemedicine/IT",
-        org: "Vinmec Healthcare System",
         descEn: "Cross-sector integrations, cloud medical platforms, AI imaging tools, and telemedicine links between private hospital networks and public community clinics.",
         descVi: "Tích hợp nền tảng đám mây y tế, ứng dụng AI trong chẩn đoán hình ảnh và mạng lưới telemedicine kết nối bệnh viện tư nhân với y tế cơ sở."
       },
@@ -536,8 +554,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Tọa đàm",
         titleEn: "Panel Discussion & Q&A: Digital Health Interoperability and Clinical Adoption",
         titleVi: "Tọa đàm: Khả năng Tương thích Y tế Số & Ứng dụng Thực hành Lâm sàng",
-        speaker: "Dr Neel Gobin (Chair)",
-        role: "Hunter New England Health (Australia)",
         descEn: "Bilateral panel dissecting technology implementation hurdles, electronic health record interoperability, patient cybersecurity, and clinical staff adoption.",
         descVi: "Đối thoại chuyên sâu về các rào cản triển khai công nghệ số, bảo mật dữ liệu y tế và đào tạo đội ngũ y bác sĩ thích ứng với kỷ nguyên số."
       },
@@ -655,9 +671,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Phiên 5",
         titleEn: "Keynote Session 5: Integrating Public and Private Care — Building Sustainable Primary Health Models in Vietnam",
         titleVi: "Khóa chính 5: Kết hợp Y tế Công - Tư: Xây dựng Mô hình Y tế Cơ sở Bền vững tại Việt Nam",
-        speaker: "Dr Rafi Kot (TBC)",
-        role: "Founder & Medical Director",
-        org: "Family Medical Practice Vietnam",
         descEn: "Thirty years of lessons developing private international primary care, ambulance dispatch networks, and preventative wellness.",
         descVi: "Ba thập kỷ kinh nghiệm xây dựng hệ thống phòng khám đa khoa quốc tế, mạng lưới điều phối cấp cứu và chăm sóc sức khỏe dự phòng."
       },
@@ -668,9 +681,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Phiên 6",
         titleEn: "Keynote Session 6: Scaling Quality Care — Private Sector Innovations and Community Impact at Pasteur General Clinic",
         titleVi: "Khóa chính 6: Mở rộng Chăm sóc Chất lượng: Đổi mới Khu vực Tư nhân tại Phòng khám Pasteur",
-        speaker: "Dr. Nguyen Van Anh (TBC)",
-        role: "Director",
-        org: "Pasteur General Clinic (Danang)",
         descEn: "Private clinical entrepreneurship, diagnostic lab automation, patient-centered care, and sustainable outpatient billing.",
         descVi: "Khởi nghiệp kinh doanh y khoa, tự động hóa xét nghiệm chẩn đoán, lấy người bệnh làm trung tâm và tính bền vững phòng khám tư."
       },
@@ -681,8 +691,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Tọa đàm",
         titleEn: "Panel Discussion: Primary Care Practice Models — Australia vs. Vietnam",
         titleVi: "Tọa đàm: Mô hình Quản trị Phòng khám Đa khoa — So sánh Úc & Việt Nam",
-        speaker: "Dr Siobhain Brennan (Chair)",
-        role: "GP & Medical Practice Owner, Western Australia",
         descEn: "Comparing private billing vs. bulk billing, Medicare compliance, corporate healthcare consolidations, and GP business profitability.",
         descVi: "So sánh cơ chế thu phí phòng khám, quản lý rủi ro pháp lý, xu hướng hợp nhất doanh nghiệp y tế và tối ưu hiệu quả phòng khám bác sĩ gia đình."
       },
@@ -728,8 +736,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Khảo sát Bệnh viện",
         titleEn: "Site Visit: Vinmec International Hospital / Advanced Medical Technology Center",
         titleVi: "Khảo sát Thực tế: Trung tâm Công nghệ Y khoa Tiên tiến Vinmec",
-        speaker: "Dr Jemma Hogan (ADBA Delegation Lead)",
-        org: "Vinmec Da Nang International Hospital",
         descEn: "Behind-the-scenes walkthrough of cutting-edge robotic surgery suites, AI diagnostic suites, telemetry monitoring, and oncology treatment planning facilities.",
         descVi: "Tham quan thực tế hệ thống phẫu thuật robot, trung tâm chẩn đoán hình ảnh AI, phòng giám sát từ xa và trung tâm điều trị ung bướu kỹ thuật cao."
       },
@@ -760,9 +766,6 @@ const AGENDA_DATA = [
         badgeTextVi: "Lễ Bế mạc",
         titleEn: "Closing Remarks & 2027 Study Tour Announcement",
         titleVi: "Bế mạc Khóa học & Công bố Chương trình Khảo sát 2027",
-        speaker: "Dr Sayanta Jana",
-        role: "Academic Dean",
-        org: "Australian Doctors Business Academy",
         descEn: "Summary of Vietnam Study Tour key learnings, presentation of CPD certificates of completion, and preview of ADBA's 2027 international medical destination.",
         descVi: "Tổng kết kết quả học tập chuyến khảo sát, trao chứng nhận hoàn thành 15 giờ tín chỉ CPD và công bố điểm đến học thuật quốc tế năm 2027."
       }

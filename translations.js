@@ -15,7 +15,7 @@ const TRANSLATIONS = {
     "nav.pricing": "Pricing",
     "nav.partners": "Partners",
     "nav.faq": "FAQ",
-    "nav.book_now": "Book Now",
+    "nav.book_now": "Register Now",
 
     // Hero Section
     "hero.badge_tour": "ADBA International Study Tour",
@@ -28,7 +28,7 @@ const TRANSLATIONS = {
     "hero.meta_venue_val": "Courtyard by Marriott, Danang",
     "hero.meta_format_title": "Format",
     "hero.meta_format_val": "In person & invitation only",
-    "hero.btn_book": "Secure Your Place ($4,500 AUD)",
+    "hero.btn_book": "Register Now",
     "hero.btn_program": "Explore 7-Day Program",
     "hero.trust_cpd": "AMA CPD Home Certified (15 Hrs)",
     "hero.trust_hotel": "All-Inclusive 4-Star Stay",
@@ -136,7 +136,7 @@ const TRANSLATIONS = {
     // Partners Section
     "partners.tag": "Strategic Alliances",
     "partners.title": "Official Partners & Collaborators",
-    "partners.desc": "Collaborating with Australia and Southeast Asia's foremost medical academies, strategic advisors, and luxury corporate travel leaders to deliver an unparalleled executive study tour.",
+    "partners.desc": "Collaborating with Australia and Southeast Asia's foremost medical academies and strategic advisors to deliver an unparalleled executive study tour.",
     "partners.organiser_tag": "Organiser & Academic Host",
     "partners.organiser_title": "Australian Doctors Business Academy (ADBA)",
     "partners.organiser_desc": "The premier Australasian professional development academy providing certified CPD education, medical business leadership, and bilateral healthcare trade immersions for medical practitioners.",
@@ -224,7 +224,7 @@ const TRANSLATIONS = {
     "hero.meta_venue_val": "Courtyard by Marriott, Đà Nẵng",
     "hero.meta_format_title": "Hình thức",
     "hero.meta_format_val": "Trực tiếp & Chỉ dành cho Khách mời",
-    "hero.btn_book": "Giữ Chỗ Ngay ($4,500 AUD)",
+    "hero.btn_book": "Đăng ký Ngay",
     "hero.btn_program": "Khám phá Lịch trình 7 Ngày",
     "hero.trust_cpd": "Chứng nhận AMA CPD Home (15 Giờ)",
     "hero.trust_hotel": "Trọn gói Khách sạn 4 Sao",
@@ -332,7 +332,7 @@ const TRANSLATIONS = {
     // Partners Section
     "partners.tag": "Liên minh Hợp tác",
     "partners.title": "Đối tác Chiến lược & Đồng hành",
-    "partners.desc": "Tự hào hợp tác cùng các học viện y khoa quốc tế, đơn vị tư vấn chiến lược địa phương và các thương hiệu lữ hành doanh nghiệp hàng đầu Đông Nam Á.",
+    "partners.desc": "Tự hào hợp tác cùng các học viện y khoa quốc tế và đơn vị tư vấn chiến lược địa phương để mang lại chuyến công tác học thuật y khoa vượt trội.",
     "partners.organiser_tag": "Đơn vị Tổ chức & Chủ trì Học thuật",
     "partners.organiser_title": "Australian Doctors Business Academy (ADBA)",
     "partners.organiser_desc": "Học viện phát triển chuyên môn hàng đầu tại Úc cung cấp các chương trình đào tạo tín chỉ CPD đạt chuẩn, kỹ năng quản trị kinh doanh y khoa và các chuyến khảo sát giao thương y tế quốc tế cho y bác sĩ.",
