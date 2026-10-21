@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OG Banner Option 1 - Centered Layout | Vietnam International Study Tour 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Raleway:wght@700;800;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #071527;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .og-container {
+      width: 1200px;
+      height: 630px;
+      position: relative;
+      background: 
+        radial-gradient(circle at 50% 32%, rgba(0, 180, 216, 0.32) 0%, transparent 60%),
+        radial-gradient(circle at 82% 20%, rgba(16, 185, 129, 0.22) 0%, transparent 45%),
+        linear-gradient(135deg, rgba(7, 21, 39, 0.88) 0%, rgba(10, 25, 47, 0.82) 50%, rgba(13, 37, 63, 0.88) 100%),
+        url('assets/images/hero-banner.webp') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 36px 56px;
+      border: 1px solid rgba(0, 180, 216, 0.35);
+      box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.55);
+    }
+    /* Subtle decorative grid */
+    .og-container::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: 0.65;
+      pointer-events: none;
+    }
+    /* Top Series & Brand Bar */
+    .og-top-brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 12px;
+      z-index: 2;
+    }
+    .og-logo-main {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 10px rgba(0, 0, 0, 0.6));
+    }
+    .og-divider-vert {
+      width: 1px;
+      height: 28px;
+      background: rgba(255, 255, 255, 0.25);
+    }
+    .og-series-tag {
+      font-size: 0.86rem;
+      font-weight: 800;
+      color: #38bdf8;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    /* Date & Location Capsule */
+    .og-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: 40px;
+      padding: 7px 24px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      color: #e0f2fe;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      margin-bottom: 16px;
+      z-index: 2;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+    }
+    .og-badge .bullet {
+      color: #00b4d8;
+    }
+    .og-badge .venue {
+      color: #ffffff;
+      font-weight: 800;
+    }
+    .og-badge .cpd {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: #10b981;
+      color: #ffffff;
+      padding: 2px 10px;
+      border-radius: 20px;
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.8px;
+      margin-left: 4px;
+    }
+    /* Main Titles */
+    .og-title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 3.15rem;
+      font-weight: 900;
+      line-height: 1.08;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+    .og-title .line-cyan {
+      color: #00b4d8;
+      text-shadow: 0 0 35px rgba(0, 180, 216, 0.55), 0 3px 12px rgba(0, 0, 0, 0.7);
+      display: block;
+    }
+    .og-title .line-white {
+      color: #ffffff;
+      font-weight: 900;
+      display: block;
+      text-shadow: 0 3px 14px rgba(0, 0, 0, 0.7);
+    }
+    .og-subtitle {
+      font-size: 1.28rem;
+      font-weight: 700;
+      color: #bae6fd;
+      margin-bottom: 10px;
+      letter-spacing: -0.2px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+      z-index: 2;
+    }
+    .og-desc {
+      font-size: 0.98rem;
+      line-height: 1.45;
+      font-weight: 500;
+      color: #cbd5e1;
+      margin-bottom: 24px;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+      max-width: 860px;
+      z-index: 2;
+    }
+    /* Organizers & Partners Capsule */
+    .og-organizers {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 22px;
+      background: rgba(10, 25, 47, 0.85);
+      border: 1px solid rgba(0, 180, 216, 0.35);
+      padding: 10px 28px;
+      border-radius: 50px;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      z-index: 2;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 24px rgba(0, 180, 216, 0.15);
+    }
+    .og-org-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .og-org-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+    }
+    .og-org-img {
+      height: 34px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
+      background: rgba(255, 255, 255, 0.95);
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .og-org-divider {
+      width: 1px;
+      height: 26px;
+      background: rgba(255, 255, 255, 0.22);
+    }
+  </style>
+</head>
+<body>
+  <div class="og-container">
+    
+    <!-- Top Series / Brand Bar -->
+    <div class="og-top-brand">
+      <img src="assets/images/adba-logo.png" alt="Australian Doctors Business Academy" class="og-logo-main">
+      <div class="og-divider-vert"></div>
+      <span class="og-series-tag">International Medical Study Tour Series</span>
+    </div>
+
+    <!-- Date & Location Badge -->
+    <div class="og-badge">
+      <span>29 Nov – 5 Dec 2026</span>
+      <span class="bullet">•</span>
+      <span class="venue">Da Nang, Vietnam</span>
+      <span class="bullet">•</span>
+      <span class="cpd">15 AMA CPD Hours</span>
+    </div>
+
+    <!-- Main Title -->
+    <h1 class="og-title">
+      <span class="line-cyan">VIETNAM INTERNATIONAL</span>
+      <span class="line-white">STUDY TOUR 2026</span>
+    </h1>
+
+    <div class="og-subtitle">
+      From Grassroots to Digital: Health System Transformation and Universal Care
+    </div>
+
+    <p class="og-desc">
+      An exclusive 7-day executive study tour for Australian healthcare leaders, clinical executives, and hospital directors. Comprehensive hospital site visits, universal healthcare models, and bilateral networking in Vietnam.
+    </p>
+
+    <!-- Bottom Organizers & Partners Capsule -->
+    <div class="og-organizers">
+      <div class="og-org-group">
+        <span class="og-org-label">Organizer:</span>
+        <span style="color: #ffffff; font-weight: 800; font-size: 0.88rem; letter-spacing: 0.5px;">ADBA</span>
+      </div>
+      <div class="og-org-divider"></div>
+      <div class="og-org-group">
+        <span class="og-org-label">Official Partners:</span>
+        <img src="assets/images/flight-centre-logo.jpg" alt="Flight Centre" class="og-org-img">
+        <img src="assets/images/indochina-heritage-logo.webp" alt="Indochina Heritage" class="og-org-img">
+        <img src="assets/images/partners/lion-huynh-tran.png" alt="Lion Huynh Tran" class="og-org-img" style="background: transparent; filter: brightness(1.2);">
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
