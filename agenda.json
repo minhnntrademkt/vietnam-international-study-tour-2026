@@ -1,0 +1,531 @@
+{
+  "tour": {
+    "title": "International Study Tour 2026",
+    "theme": "From Grassroots to Digital: Health System Transformation and Universal Care in Vietnam",
+    "dates": "29th November – 5th December 2026",
+    "startDate": "2026-11-29T14:00:00+07:00",
+    "endDate": "2026-12-05T12:00:00+07:00",
+    "venue": "Courtyard by Marriott Danang Han River",
+    "location": "58 Bach Dang Street, Hai Chau Ward, Da Nang, Vietnam",
+    "cpdHours": 15,
+    "cpdAccreditation": "CPD Home AMA 2026 Certified",
+    "priceAud": 4500,
+    "depositAud": 1000,
+    "currency": "AUD"
+  },
+  "days": [
+    {
+      "dayNumber": 1,
+      "dateString": "Sunday 29 November 2026",
+      "shortTitle": "Arrival & Welcome",
+      "venue": "Courtyard by Marriott Danang Han River",
+      "sessions": [
+        {
+          "time": "2:00 PM",
+          "type": "Logistics",
+          "title": "Group Arrivals & Airport Transfers",
+          "description": "Airport pickup with VIP greeting and transfer to Courtyard by Marriott Danang Han River. Hotel check-in and leisure time."
+        },
+        {
+          "time": "6:00 PM",
+          "type": "Reception",
+          "title": "Welcome Reception",
+          "location": "The Landmark, Marriott Courtyard",
+          "description": "Evening reception to meet fellow delegates, Australian faculty, and Vietnamese healthcare hosts."
+        },
+        {
+          "time": "6:00 PM",
+          "type": "Orientation",
+          "title": "Welcome & Orientation: Vietnam's Healthcare Journey",
+          "speaker": "Dr Sayanta Jana",
+          "role": "Academic Dean",
+          "organisation": "Australian Doctors Business Academy",
+          "description": "Introduction to Vietnamese healthcare leaders and Australian faculty. Overview of tour itinerary, learning expectations, and CPD accreditation pathways."
+        },
+        {
+          "time": "6:30 PM",
+          "type": "Keynote",
+          "title": "Opening Keynote: Vietnam's Universal Health Journey — Laying Digital Foundations for Equitable Care",
+          "speaker": "Dr. Tran Van Thuan (TBC)",
+          "role": "Deputy Minister of Health",
+          "organisation": "Ministry of Health, Vietnam",
+          "description": "National policy landscape, universal coverage milestones, and national digital health strategic directions."
+        },
+        {
+          "time": "7:00 PM",
+          "type": "Dining",
+          "title": "Welcome Dinner at The Landmark",
+          "location": "The Landmark, Marriott Courtyard, Danang",
+          "description": "Vietnamese-fusion welcome dinner setting the collaborative tone for the study tour week."
+        }
+      ]
+    },
+    {
+      "dayNumber": 2,
+      "dateString": "Monday 30 November 2026",
+      "shortTitle": "UHC & Public Hospital Transformation",
+      "venue": "The East Room, Marriott Courtyard & Da Nang Hospital",
+      "badge": "CPD Intensive #1",
+      "sessions": [
+        {
+          "time": "9:00 AM",
+          "type": "Keynote",
+          "title": "Keynote Session 1: Universal Health Coverage on the Front Lines — Lessons from Da Nang Hospital's Transformation Journey",
+          "speaker": "Dr. Le Duc Nhan (TBC)",
+          "role": "Director",
+          "organisation": "Da Nang Hospital (Benh Vien Da Nang), Vietnam",
+          "description": "Frontline operational perspective on balancing clinical complexity, high patient volumes, and universal health insurance."
+        },
+        {
+          "time": "10:00 AM",
+          "type": "Break",
+          "title": "Morning Tea & Networking Break",
+          "location": "Foyer Ballroom",
+          "description": "Informal peer discussions with Australian delegates and clinical leaders."
+        },
+        {
+          "time": "10:30 AM",
+          "type": "Keynote",
+          "title": "Keynote Session 2: Financing Universal Health — Building Sustainable Models for Equitable Access in Vietnam",
+          "speaker": "Dr. Nguyen Truong Son (TBC)",
+          "role": "Former Vice Minister of Health",
+          "organisation": "Ministry of Health, Vietnam",
+          "description": "Reimbursement mechanisms, social health insurance solvency, and financial sustainability frameworks."
+        },
+        {
+          "time": "11:15 AM",
+          "type": "Panel",
+          "title": "Panel Discussion & Interactive Q&A",
+          "chair": "Dr Nabrees Sinnalebbe (FRACMA, FACHSM - Mildura Base Public Hospital, NSW)",
+          "panelists": [
+            "Dr. Le Duc Nhan (Director, Da Nang Hospital)",
+            "Dr. Nguyen Truong Son (Former Vice Minister of Health, Vietnam)"
+          ],
+          "description": "Cross-comparative analysis of public healthcare financing and resource constraints in Australia vs. Vietnam."
+        },
+        {
+          "time": "12:00 PM",
+          "type": "Dining",
+          "title": "Lunch & Networking Break",
+          "location": "The Landmark",
+          "description": "Buffet luncheon at Marriott Courtyard."
+        },
+        {
+          "time": "1:00 PM",
+          "type": "Transfer",
+          "title": "Transfer to Da Nang General Hospital",
+          "description": "Coordinated coach transfer with ADBA tour leaders."
+        },
+        {
+          "time": "2:00 PM",
+          "type": "Site Visit",
+          "title": "Hospital Site Visit: Da Nang General Hospital Guided Tour",
+          "leads": "Executives & Clinical Leads (Da Nang Hospital), Dr Anand Ponniraivan (ADBA Delegation Lead)",
+          "description": "Behind-the-scenes guided tour focusing on clinical pathways, insurance-driven workflow, workforce management, and small-group discussions with department leads."
+        },
+        {
+          "time": "5:00 PM",
+          "type": "Transfer",
+          "title": "Return Coach Transfer to Marriott Courtyard",
+          "description": "Transfer and relaxation time before evening functions."
+        },
+        {
+          "time": "6:30 PM",
+          "type": "Reception",
+          "title": "Welcome Drinks at The Summit Room",
+          "location": "The Summit Room, Marriott Courtyard",
+          "description": "Panoramic river views with pre-dinner refreshments."
+        },
+        {
+          "time": "7:00 PM",
+          "type": "Dining",
+          "title": "Dinner at The Summit Room & Featured Civic Address",
+          "speaker": "Mr. Le Trung Chinh",
+          "role": "Chairman",
+          "organisation": "People's Committee of Danang City",
+          "topic": "Danang's Vision: Building a Smart, Healthy, and Inclusive City for the Future",
+          "description": "Official city leadership dinner highlighting urban health development and foreign cooperation."
+        }
+      ]
+    },
+    {
+      "dayNumber": 3,
+      "dateString": "Tuesday 1 December 2026",
+      "shortTitle": "Digital Health, Telemedicine & Danang Discovery",
+      "venue": "The East Room, Marriott Courtyard & Central Danang",
+      "badge": "CPD Intensive #2",
+      "sessions": [
+        {
+          "time": "9:00 AM",
+          "type": "Keynote",
+          "title": "Keynote Session 3: Bridging the Gap — How Digital Health and Telemedicine are Transforming Patient Care at Vinmec Da Nang",
+          "speaker": "Dr. Nguyen Huu Thien (TBC)",
+          "role": "Medical Director",
+          "organisation": "Vinmec Da Nang International Hospital",
+          "description": "Case study on private tertiary care telemedicine networks, electronic medical records, and digital triage."
+        },
+        {
+          "time": "10:00 AM",
+          "type": "Break",
+          "title": "Morning Tea & Networking Break",
+          "location": "Foyer Ballroom",
+          "description": "Coffee, tea, and delegate conversations."
+        },
+        {
+          "time": "10:30 AM",
+          "type": "Keynote",
+          "title": "Keynote Session 4: Beyond Boundaries — Public-Private Collaboration and Digital Innovation in Vietnam's Health Sector",
+          "speaker": "Dr. Vuong Quoc Duy (TBC)",
+          "role": "Head of Telemedicine / IT",
+          "organisation": "Vinmec Healthcare System",
+          "description": "Architectures for health tech adoption, AI diagnostics, interoperability, and enterprise health data governance."
+        },
+        {
+          "time": "11:15 AM",
+          "type": "Panel",
+          "title": "Panel Discussion & Interactive Q&A",
+          "chair": "Dr Neel Gobin (Hunter New England Health, Australia)",
+          "panelists": [
+            "Dr. Nguyen Huu Thien (Vinmec Da Nang)",
+            "Dr. Vuong Quoc Duy (Vinmec Healthcare System)"
+          ],
+          "description": "Translating private-sector digital agility into public hospital and outpatient clinical environments."
+        },
+        {
+          "time": "12:00 PM",
+          "type": "Dining",
+          "title": "Lunch & Networking Break",
+          "location": "The Landmark",
+          "description": "Luncheon prior to afternoon cultural discovery."
+        },
+        {
+          "time": "2:00 PM",
+          "type": "Excursion",
+          "title": "Half Day City Tour: Han Market & Local Cultural Life",
+          "description": "Depart from hotel to explore Han Market, meet local vendors, experience Danang commercial life and souvenir bargaining."
+        },
+        {
+          "time": "4:00 PM",
+          "type": "Excursion",
+          "title": "Excursion: Marble Mountains (Ngu Hanh Son)",
+          "description": "Guided walking tour through natural limestone caves, historic pagodas, and panoramic viewpoints."
+        },
+        {
+          "time": "6:00 PM",
+          "type": "Dining",
+          "title": "Seafood Dinner at My Hanh Seafood Restaurant",
+          "location": "My Khe Beach, Danang",
+          "description": "Fresh coastal seafood dinner overlooking My Khe Beach."
+        },
+        {
+          "time": "9:00 PM",
+          "type": "Transfer",
+          "title": "Transfer Back to Marriott Courtyard",
+          "description": "Coach transfer and evening at leisure."
+        }
+      ]
+    },
+    {
+      "dayNumber": 4,
+      "dateString": "Wednesday 2 December 2026",
+      "shortTitle": "Hoi An Heritage & Wellness Day",
+      "venue": "UNESCO World Heritage Hoi An Ancient Town",
+      "badge": "Cultural & Wellness Immersion",
+      "sessions": [
+        {
+          "time": "9:00 AM",
+          "type": "Transfer",
+          "title": "Pickup at Hotel & Scenic Drive to Hoi An",
+          "description": "Air-conditioned private coach transfer through the coastal countryside."
+        },
+        {
+          "time": "10:00 AM",
+          "type": "Excursion",
+          "title": "Basket Boat Experience in Bay Mau Coconut Forest",
+          "description": "Traditional round basket boat excursion through tranquil waterways and water coconut palm groves."
+        },
+        {
+          "time": "11:00 AM",
+          "type": "Transfer",
+          "title": "Transfer to Reu Restaurant, Hoi An",
+          "description": "Short transfer to relaxation venue."
+        },
+        {
+          "time": "11:45 AM",
+          "type": "Wellness",
+          "title": "Relaxation Foot Massage Experience",
+          "description": "Traditional herbal foot massage treatment designed for relaxation and delegate rejuvenation."
+        },
+        {
+          "time": "12:30 PM",
+          "type": "Dining",
+          "title": "Traditional Luncheon at Reu Restaurant, Hoi An",
+          "description": "Authentic Central Vietnamese culinary tasting menu."
+        },
+        {
+          "time": "3:30 PM",
+          "type": "Excursion",
+          "title": "Guided Walking Tour: UNESCO Ancient Town of Hoi An",
+          "description": "Exploration of historic Japanese Covered Bridge, ancient merchant residences, and traditional Chinese assembly halls."
+        },
+        {
+          "time": "4:30 PM",
+          "type": "Leisure",
+          "title": "Explore Hoi An at Leisure",
+          "description": "Free time for artisan boutique shopping, tailor visits, and riverside cafes."
+        },
+        {
+          "time": "6:15 PM",
+          "type": "Excursion",
+          "title": "Thu Bon River Boat Trip & Paper Lantern Release",
+          "description": "Evening wooden boat cruise releasing traditional glowing paper lanterns onto the tranquil river."
+        },
+        {
+          "time": "7:00 PM",
+          "type": "Dining",
+          "title": "Welcome Drinks & Dinner at Vy Market (Morning Glory Signature)",
+          "location": "Vy Market, Third Floor, Hoi An",
+          "description": "Iconic culinary dinner celebrating Hoi An street food traditions crafted to fine-dining standards."
+        },
+        {
+          "time": "9:30 PM",
+          "type": "Transfer",
+          "title": "Transfer Back to Marriott Courtyard Danang",
+          "description": "Coach transfer and restful evening."
+        }
+      ]
+    },
+    {
+      "dayNumber": 5,
+      "dateString": "Thursday 3 December 2026",
+      "shortTitle": "Primary Care, Private Clinics & Peninsula Gala",
+      "venue": "The East Room & InterContinental Son Tra",
+      "badge": "CPD Intensive #3",
+      "sessions": [
+        {
+          "time": "9:00 AM",
+          "type": "Keynote",
+          "title": "Keynote Session 5: Integrating Public and Private Care — Building Sustainable Primary Health Models in Vietnam",
+          "speaker": "Dr Rafi Kot (TBC)",
+          "role": "Founder and Medical Director",
+          "organisation": "Family Medical Practice Vietnam",
+          "description": "Three decades of experience establishing international standard primary care, emergency response, and bilingual clinics in Vietnam."
+        },
+        {
+          "time": "10:00 AM",
+          "type": "Break",
+          "title": "Morning Tea & Networking Break",
+          "location": "Foyer Ballroom",
+          "description": "Refreshments and clinical networking."
+        },
+        {
+          "time": "10:30 AM",
+          "type": "Keynote",
+          "title": "Keynote Session 6: Scaling Quality Care — Private Sector Innovations and Community Impact at Pasteur General Clinic",
+          "speaker": "Dr. Nguyen Van Anh (TBC)",
+          "role": "Director",
+          "organisation": "Pasteur General Clinic (Danang)",
+          "description": "Operational scalability, diagnostic imaging investments, and outpatient patient retention in regional urban centers."
+        },
+        {
+          "time": "11:15 AM",
+          "type": "Panel",
+          "title": "Panel Discussion & Interactive Q&A",
+          "chair": "Dr Siobhain Brennan (BSc, PhD, MBBS, DCH, FRACGP, GAICD - GP, Western Australia)",
+          "panelists": [
+            "Dr Rafi Kot (Founder, Family Medical Practice Vietnam)",
+            "Dr. Nguyen Van Anh (Director, Pasteur General Clinic Danang)"
+          ],
+          "description": "Comparing primary practice models: Private billing in Australia vs. consumer out-of-pocket dynamics in Vietnam."
+        },
+        {
+          "time": "12:00 PM",
+          "type": "Dining",
+          "title": "Lunch & Networking Break",
+          "location": "The Landmark",
+          "description": "Buffet luncheon at Marriott Courtyard."
+        },
+        {
+          "time": "1:00 PM",
+          "type": "Leisure",
+          "title": "Delegate Free Afternoon: Danang City, Beaches, Spa or Shopping",
+          "description": "Open leisure time for delegates to explore My Khe beach, indulge in wellness therapies, or relax."
+        },
+        {
+          "time": "5:00 PM",
+          "type": "Transfer",
+          "title": "Depart Hotel for Son Tra Peninsula",
+          "description": "Scenic mountain and coastal drive."
+        },
+        {
+          "time": "6:00 PM",
+          "type": "Dining",
+          "title": "Welcome Drinks & Dinner at Terra Mare",
+          "location": "InterContinental Danang Sun Peninsula Resort, Son Tra",
+          "featuredGuest": "Australian Consulate-General, Da Nang (TBC)",
+          "description": "Luxury dinner at one of the world's premier architectural resorts, exploring bilateral healthcare cooperation."
+        },
+        {
+          "time": "9:00 PM",
+          "type": "Transfer",
+          "title": "Transfer Back to Marriott Courtyard",
+          "description": "Return coach transfer."
+        }
+      ]
+    },
+    {
+      "dayNumber": 6,
+      "dateString": "Friday 4 December 2026",
+      "shortTitle": "Vinmec Tech Center, Ba Na Hills & Gala Night",
+      "venue": "Vinmec International Hospital, Ba Na Hills & Marriott Courtyard",
+      "badge": "Clinical Capstone & Gala",
+      "sessions": [
+        {
+          "time": "8:30 AM",
+          "type": "Transfer",
+          "title": "Depart Hotel for Vinmec Hospital",
+          "description": "Coach transfer."
+        },
+        {
+          "time": "9:00 AM",
+          "type": "Site Visit",
+          "title": "Hospital Site Visit: Vinmec International Hospital & Advanced Medical Technology Center",
+          "leads": "Vinmec Clinical & Administrative Leadership, Dr Jemma Hogan (ADBA Delegation Lead)",
+          "description": "Comprehensive tour of JCI-accredited tertiary facilities, robotic surgery suites, telemedicine command hubs, and digital leadership discussions."
+        },
+        {
+          "time": "10:00 AM",
+          "type": "Break",
+          "title": "Morning Tea & Networking Break",
+          "description": "Light refreshments on site."
+        },
+        {
+          "time": "10:30 AM",
+          "type": "Workshop",
+          "title": "Capstone Workshop: Translating Lessons to Australian Practice — System, Business, and Clinical Takeaways",
+          "description": "Facilitated peer workshop and action planning: synthesising digital workflows, public-private synergies, and business leadership strategies for Australian practice."
+        },
+        {
+          "time": "11:30 AM",
+          "type": "Dining",
+          "title": "Lunch at Madame Lan Restaurant",
+          "description": "Famous riverside Vietnamese culinary experience in Danang."
+        },
+        {
+          "time": "1:00 PM",
+          "type": "Transfer",
+          "title": "Depart for Ba Na Hills",
+          "description": "Coach transfer to the foot of Truong Son mountain range."
+        },
+        {
+          "time": "2:00 PM",
+          "type": "Excursion",
+          "title": "Cable Car Ascent to Ba Na Hills",
+          "description": "World record-holding cable car journey above lush rainforest canopies."
+        },
+        {
+          "time": "2:30 PM",
+          "type": "Excursion",
+          "title": "Explore Golden Bridge & Ba Na Mountain Landmark",
+          "description": "Walking along the iconic Golden Bridge held by giant stone hands, French Village, and Le Jardin d'Amour."
+        },
+        {
+          "time": "5:00 PM",
+          "type": "Transfer",
+          "title": "Transfer Back to Marriott Courtyard",
+          "description": "Descent and coach transfer to hotel to prepare for the closing gala."
+        },
+        {
+          "time": "7:00 PM",
+          "type": "Reception",
+          "title": "Welcome Drinks — Private Room",
+          "description": "Cocktails and delegate gathering."
+        },
+        {
+          "time": "7:15 PM",
+          "type": "Closing",
+          "title": "Closing Remarks & Study Tour Wrap-Up",
+          "speaker": "Dr Sayanta Jana",
+          "role": "Academic Dean",
+          "organisation": "Australian Doctors Business Academy",
+          "description": "Summary of Vietnam Study Tour key learnings, CPD certificate conferral framework, and official announcement of the 2027 Study Tour."
+        },
+        {
+          "time": "7:30 PM",
+          "type": "Dining",
+          "title": "Celebratory Gala Dinner at The East + West Rooms",
+          "location": "The East + West Rooms, Marriott Courtyard, Danang",
+          "description": "Formal multi-course celebration dinner with entertainment and recognition."
+        }
+      ]
+    },
+    {
+      "dayNumber": 7,
+      "dateString": "Saturday 5 December 2026",
+      "shortTitle": "Breakfast, Farewell & Airport Transfers",
+      "venue": "Courtyard by Marriott Danang Han River",
+      "badge": "Departure",
+      "sessions": [
+        {
+          "time": "Morning",
+          "type": "Dining",
+          "title": "Buffet Breakfast & Check-Out",
+          "location": "Marriott Courtyard",
+          "description": "Full gourmet breakfast buffet, luggage handling, and room checkout."
+        },
+        {
+          "time": "Morning",
+          "type": "Logistics",
+          "title": "Group Airport Transfers",
+          "description": "Scheduled VIP transfers to Da Nang International Airport for connecting flights."
+        },
+        {
+          "time": "Flexible",
+          "type": "Leisure",
+          "title": "Optional Last-Minute Stroll or Riverside Coffee",
+          "description": "For delegates with late departures, enjoy a morning stroll along the Han River waterfront or local cafes."
+        }
+      ]
+    }
+  ],
+  "pricing": {
+    "delegateFee": 4500,
+    "gstIncluded": true,
+    "gstNote": "Prices include 10% Australian GST",
+    "partnerPricingNote": "Contact us for partner and accompanying children pricing packages",
+    "depositRequired": 1000,
+    "inclusions": [
+      "6 nights accommodation at 4-star Courtyard by Marriott Danang Han River (Deluxe King or Twin)",
+      "All group meals (daily buffet breakfast, lunches, and specialty evening dinners)",
+      "All alcoholic and non-alcoholic beverages during official functions",
+      "VIP fast-track arrival and departure service at Da Nang International Airport",
+      "Airport transfers (arrival and departure) and private ground transport for all itinerary events",
+      "All hospital site visits, clinical inspections, workshop materials, and official entry fees",
+      "15 Hours AMA CPD Home certified intensive program and conferral documentation",
+      "High-level networking receptions and Celebratory Gala Dinner",
+      "Guided cultural excursions: UNESCO Hoi An Ancient Town, Marble Mountains, Ba Na Hills & Golden Bridge"
+    ],
+    "exclusions": [
+      "International flights to and from Vietnam",
+      "Vietnam visa application charges",
+      "Delegates' personal travel and medical insurance",
+      "Optional additional leisure activities, spa treatments, or personal incidental expenses"
+    ]
+  },
+  "partners": {
+    "travelPartner": {
+      "name": "Flight Centre Business and First Class (Perth)",
+      "role": "Official Australian Travel Partner",
+      "logo": "assets/images/flight-centre-logo.jpg",
+      "contactPhone": "08 6144 7780",
+      "description": "Specialised First and Business Class travel consultants ready to handle flights, extensions, and tailored travel needs."
+    },
+    "sightseeingPartner": {
+      "name": "Indochina Heritage Travel Group",
+      "role": "Official Vietnam Sightseeing & DMC Partner",
+      "logo": "assets/images/indochina-heritage-logo.webp",
+      "website": "https://indochinaheritage.com/",
+      "description": "Award-winning full-service destination management company with 15+ years of regional MICE and luxury travel expertise."
+    }
+  }
+}
