@@ -39,6 +39,8 @@ const TRANSLATIONS = {
     "hero.cd_mins": "Mins",
     "hero.cd_secs": "Secs",
     "hero.cd_note": "Tour opens 29th November 2026 at Courtyard by Marriott Danang Han River. Spaces strictly limited.",
+    "hero.partner_organizer": "Organizer:",
+    "hero.partner_official": "Official Partner:",
 
     // Executive Overview
     "overview.tag": "Executive Overview",
@@ -235,6 +237,8 @@ const TRANSLATIONS = {
     "hero.cd_mins": "Phút",
     "hero.cd_secs": "Giây",
     "hero.cd_note": "Chương trình khai mạc ngày 29 tháng 11 năm 2026 tại Courtyard by Marriott Danang Han River. Số lượng đại biểu giới hạn.",
+    "hero.partner_organizer": "Đơn vị Tổ chức:",
+    "hero.partner_official": "Đối tác Chiến lược:",
 
     // Executive Overview
     "overview.tag": "Tổng quan Điều hành",

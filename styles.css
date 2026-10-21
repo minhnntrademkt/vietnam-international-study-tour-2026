@@ -632,6 +632,120 @@ ul {
 }
 
 /* ==========================================================================
+   HERO OFFICIAL PARTNERS CAPSULE (Synchronized with OG Banner)
+   ========================================================================== */
+.hero-partners-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-partners-capsule {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 10px 32px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1.5px solid rgba(0, 119, 182, 0.22);
+  box-shadow: 0 4px 20px rgba(0, 119, 182, 0.08);
+  transition: all var(--transition-smooth);
+}
+
+.hero-partners-capsule:hover {
+  box-shadow: 0 8px 28px rgba(0, 119, 182, 0.14);
+  border-color: rgba(0, 119, 182, 0.38);
+}
+
+.hero-partner-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.hero-partner-label {
+  font-size: 0.75rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--adba-blue-dark);
+}
+
+.hero-partner-logo-adba {
+  height: 32px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.06));
+}
+
+.hero-partner-divider {
+  width: 1.5px;
+  height: 28px;
+  background: rgba(0, 119, 182, 0.22);
+}
+
+.hero-partner-logos-group {
+  display: flex;
+  align-items: center;
+}
+
+.hero-partner-logo-lion {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.08));
+}
+
+@media (max-width: 768px) {
+  .hero-partners-container {
+    margin-top: 24px;
+  }
+  .hero-partners-capsule {
+    gap: 14px;
+    padding: 8px 18px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero-partner-logo-adba {
+    height: 26px;
+  }
+  .hero-partner-logo-lion {
+    height: 32px;
+  }
+  .hero-partner-label {
+    font-size: 0.6875rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .hero-partners-capsule {
+    gap: 10px;
+    padding: 8px 14px;
+    border-radius: 16px;
+  }
+  .hero-partner-divider {
+    display: none;
+  }
+  .hero-partner-item {
+    gap: 8px;
+  }
+  .hero-partner-logo-adba {
+    height: 22px;
+  }
+  .hero-partner-logo-lion {
+    height: 28px;
+  }
+}
+
+/* ==========================================================================
    SECTION 3: EXECUTIVE OVERVIEW (Balanced 2-Column Layout)
    ========================================================================== */
 .overview-section {

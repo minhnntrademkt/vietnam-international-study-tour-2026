@@ -189,5 +189,67 @@ Dr Jana sits on the editorial boards and peer-reviews for leading international 
 Ông là Thành viên Cao cấp và Nhà Quản trị Y tế Chứng nhận của ACHSM, sở hữu bằng Thạc sĩ Quản trị Y tế (UNSW) và Chứng chỉ Đai Xanh Lean Six Sigma. Suốt hơn 15 năm qua, TS. Jana là Đánh giá viên Trưởng của Hội đồng Tiêu chuẩn Y tế Úc (ACHS) và Hội đồng Y khoa Sau đại học Tây Úc. Giai đoạn 2014 - 2020, ông vinh dự là Đại diện của toàn bộ các bệnh viện công và tư nhân Úc tại Hội đồng Y khoa Úc (Australian Medical Council - AMC).
 
 Giáo sư Jana là thành viên ban biên tập và bình duyệt của nhiều tạp chí y khoa hàng đầu như BMJ Leader và Emerald Leadership in Health Services. Ông là chuyên gia cố vấn cho các nhà lãnh đạo y khoa tương lai, hiện đang thực hiện nghiên cứu Tiến sĩ (PhD) tại Đại học La Trobe về hệ sinh thái nền tảng y tế số, đồng thời là thành viên hội đồng cố vấn cho nhiều doanh nghiệp công nghệ y tế tiên phong.`
+  },
+
+  // 8. Mr. Bao Tran
+  {
+    id: "mr-bao-tran",
+    name: "Mr. Bao Tran",
+    category: "invest",
+    categoryLabelEn: "Healthcare Investment & Strategic Advisory",
+    categoryLabelVi: "Đầu tư Y tế & Cố vấn Chiến lược Cấp cao",
+    photo: "assets/images/speakers/tran-quoc-bao.jpg?v=20261021_2330",
+    roleEn: "Senior Advisor & Healthcare Executive",
+    roleVi: "Cố vấn Cấp cao & Chuyên gia Điều hành Y tế",
+    orgEn: "Asian Hospital & Healthcare Management (AHHM)",
+    orgVi: "Asian Hospital & Healthcare Management (AHHM)",
+    badges: ["🏆 VCCI Hospital CEO of the Year 2024", "🌐 Senior Advisor AHHM", "💼 CFA · CMT · CPWA · 12 M&A"],
+    badgesVi: ["🏆 CEO Bệnh viện của Năm 2024 (VCCI)", "🌐 Cố vấn Cấp cao AHHM", "💼 CFA · CMT · CPWA · 12 Thương vụ M&A"],
+    bioEn: `Mr. Bao Tran is a Vietnamese healthcare executive and investment advisor with more than 15 years of experience spanning hospital management, healthcare investment, and corporate finance. He is the first Vietnamese appointed as Senior Advisor to Asian Hospital & Healthcare Management (AHHM), one of the Asia-Pacific region's leading B2B healthcare platforms. Bao has held chief executive and senior leadership positions across Vietnam's private healthcare sector, including CEO of Prima Saigon Medical Center, Hoan My International Eye Hospital, and City International Hospital. Earlier in his career, he held senior management roles at FV Hospital, TMMC Healthcare, and Cao Thang International Eye Hospital. He was recognized as Hospital Chief Executive Officer of the Year 2024 by the Vietnam Chamber of Commerce and Industry (VCCI). With professional credentials including CFA, CMT, and CPWA, Bao has advised on 12 healthcare mergers and acquisitions across Vietnam.`,
+    bioVi: `Ông Bảo Trần là chuyên gia điều hành và cố vấn đầu tư y tế hàng đầu với hơn 15 năm kinh nghiệm về quản trị bệnh viện, đầu tư y tế và tài chính doanh nghiệp. Ông là người Việt Nam đầu tiên được bổ nhiệm làm Cố vấn Cấp cao của Asian Hospital & Healthcare Management (AHHM) - nền tảng truyền thông y tế B2B hàng đầu khu vực Châu Á - Thái Bình Dương. Ông từng đảm nhiệm chức vụ Tổng Giám đốc tại Trung tâm Y khoa Prima Saigon, Bệnh viện Mắt Quốc tế Hoàn Mỹ, Bệnh viện Quốc tế City, cùng các vị trí quản lý cấp cao tại Bệnh viện FV, TMMC Healthcare và Bệnh viện Mắt Cao Thắng. Ông được VCCI vinh danh là Tổng Giám đốc Bệnh viện của Năm 2024. Với các chứng chỉ tài chính quốc tế CFA, CMT, CPWA, ông đã trực tiếp tư vấn 12 thương vụ M&A y tế và tham gia tái cấu trúc, mở rộng quy mô nhiều bệnh viện lớn tại Việt Nam.`
+  },
+
+  // 9. Dr. Mason Cobb
+  {
+    id: "dr-mason-cobb",
+    name: "Dr. Mason Cobb",
+    category: "invest",
+    categoryLabelEn: "Healthcare Founder & Senior Living",
+    categoryLabelVi: "Sáng lập Y tế & Dưỡng lão Y khoa",
+    photo: "assets/images/speakers/mason-cobb.png?v=20261021_2330",
+    roleEn: "US Board-Certified Surgeon & Chairman",
+    roleVi: "Bác sĩ Phẫu thuật Hoa Kỳ & Chủ tịch Hội đồng Quản trị",
+    orgEn: "Golden Sunrise Growth & Management | Victoria Healthcare",
+    orgVi: "Golden Sunrise Growth & Management | Victoria Healthcare",
+    badges: ["🩺 US Board-Certified Surgeon", "🏥 Founder Victoria Healthcare & Columbia Asia", "🏡 Medicine 3.0 Senior Living"],
+    badgesVi: ["🩺 Bác sĩ Phẫu thuật Chứng nhận Hoa Kỳ", "🏥 Sáng lập Victoria Healthcare & Columbia Asia", "🏡 Dưỡng lão Y học 3.0"],
+    bioEn: `Dr. Loren Mason Cobb is a pioneering physician, surgeon, and healthcare leader who has advanced healthcare in Vietnam for over two decades. He was the Founding General Director and later Chairman of the Columbia-Gia Dinh International Clinic Joint Venture (now Columbia Asia). He also co-founded and led Victoria Healthcare Vietnam, developing one of the country's most trusted private healthcare systems. Currently, Dr. Mason serves as Chairman of Golden Sunrise Growth & Management JSC, leading the development of Vietnam's first world-class senior living facilities dedicated to preventive, predictive, and personalized healthcare (Medicine 3.0). Dr. Mason holds Board Certifications in Pediatric Surgery and General Surgery in the United States and has led multiple international medical missions.`,
+    bioVi: `Bác sĩ Loren Mason Cobb là bác sĩ phẫu thuật và nhà lãnh đạo y tế tiên phong với hơn hai thập kỷ cống hiến cho sự phát triển của ngành y tế Việt Nam. Ông là Tổng Giám đốc Sáng lập và sau đó là Chủ tịch của Liên doanh Phòng khám Quốc tế Columbia - Gia Định (nay là Columbia Asia). Ông cũng là người đồng sáng lập và dẫn dắt Hệ thống Y khoa Quốc tế Victoria Healthcare, xây dựng một trong những hệ thống y tế tư nhân uy tín nhất tại Việt Nam. Hiện tại, ông là Chủ tịch của Golden Sunrise Growth & Management JSC, dẫn dắt phát triển các khu đô thị dưỡng lão chuẩn quốc tế đầu tiên tại Việt Nam ứng dụng mô hình Y học 3.0 (y học dự phòng, tiên đoán và cá thể hóa). Bác sĩ Mason sở hữu các chứng chỉ Hội đồng Ngoại khoa và Phẫu thuật Nhi tại Hoa Kỳ.`
+  },
+
+  // 10. Dr. Faizal Kassim
+  {
+    id: "dr-faizal-kassim",
+    name: "Dr. Faizal Kassim",
+    category: "executive",
+    categoryLabelEn: "Group Clinical Governance & Hospital Operations",
+    categoryLabelVi: "Quản trị Lâm sàng Tập đoàn & Vận hành Bệnh viện",
+    photo: "assets/images/speakers/dr-faizal-kassim.jpg?v=20261021_2330",
+    roleEn: "Group Chief Medical Officer (GCMO)",
+    roleVi: "Tổng Giám đốc Y khoa Tập đoàn (GCMO)",
+    orgEn: "Hoan My Medical Corporation",
+    orgVi: "Tập đoàn Y khoa Hoàn Mỹ",
+    badges: ["🏥 Group CMO Hoan My Medical", "🇸🇬 NUS Alum · Public Service Medal (PBM)", "🩺 23+ Years Clinical Governance"],
+    badgesVi: ["🏥 Tổng Giám đốc Y khoa Tập đoàn Hoàn Mỹ", "🇸🇬 Cựu sinh viên NUS · Huân chương Dịch vụ Công", "🩺 23+ Năm Quản trị Lâm sàng"],
+    bioEn: `Dr Faizal Kassim is Group Chief Medical Officer of Hoan My Medical Corporation, Vietnam's largest private healthcare network. He holds group-level medical authority over hospitals and clinics in ten provinces, including Hoan My Da Nang, with about 2,900 beds and more than 5,500 staff. His mandate is to turn a federation of strong hospitals into one governed clinical system that meets JCI, ACHSI and Vietnamese Ministry of Health standards at the same time.
+
+He trained in Singapore as an emergency physician (MBBS, National University of Singapore) and has more than 23 years of experience in emergency medicine, primary care, clinical governance and P&L leadership across Singapore, Vietnam, Bangladesh and India. During COVID-19, he set up ten national vaccination centres that delivered three million doses. He also built quarantine corridors that reopened labour flows from India and Bangladesh to Singapore. He has founded a primary care group, led a JCI accreditation, and held the licences for more than 30 clinics.
+
+The Republic of Singapore awarded him the Pingat Bakti Masyarakat (Public Service Medal).`,
+    bioVi: `Tiến sĩ Bác sĩ Faizal Kassim là Tổng Giám đốc Y khoa Tập đoàn (Group Chief Medical Officer) của Tập đoàn Y khoa Hoàn Mỹ - mạng lưới y tế tư nhân lớn nhất Việt Nam. Ông phụ trách chỉ đạo chuyên môn y khoa cấp tập đoàn đối với toàn bộ các bệnh viện và phòng khám tại 10 tỉnh thành, bao gồm Bệnh viện Hoàn Mỹ Đà Nẵng, với quy mô khoảng 2.900 giường bệnh và hơn 5.500 nhân sự. Trọng trách của ông là định hình và chuẩn hóa hệ thống quản trị lâm sàng thống nhất đạt chuẩn JCI, ACHSI và Bộ Y tế Việt Nam.
+
+Ông được đào tạo bác sĩ cấp cứu tại Singapore (Cử nhân Y khoa & Phẫu thuật MBBS tại Đại học Quốc gia Singapore - NUS) với hơn 23 năm kinh nghiệm trong lĩnh vực y học cấp cứu, chăm sóc y tế ban đầu, quản trị lâm sàng và điều hành kinh doanh y tế tại Singapore, Việt Nam, Bangladesh và Ấn Độ. Trong giai đoạn đại dịch COVID-19, ông đã trực tiếp thiết lập 10 trung tâm tiêm chủng quốc gia phân phối 3 triệu liều vắc xin. Ông cũng từng sáng lập tập đoàn chăm sóc sức khỏe ban đầu, trực tiếp dẫn dắt quy trình kiểm định chất lượng JCI và quản lý giấy phép hoạt động cho hơn 30 phòng khám.
+
+Ông vinh dự được Nhà nước Cộng hòa Singapore trao tặng Huân chương Dịch vụ Công (Pingat Bakti Masyarakat - PBM).`
   }
 ];
