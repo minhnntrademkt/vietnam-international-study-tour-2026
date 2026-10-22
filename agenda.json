@@ -96,14 +96,14 @@
         {
           "time": "1:00 PM",
           "type": "Transfer",
-          "title": "Transfer to Da Nang General Hospital",
+          "title": "Transfer to Public Tertiary Hospital",
           "description": "Coordinated coach transfer with ADBA tour leaders."
         },
         {
           "time": "2:00 PM",
           "type": "Site Visit",
-          "title": "Hospital Site Visit: Da Nang General Hospital Guided Tour",
-          "leads": "Executives & Clinical Leads (Da Nang Hospital), Dr Anand Ponniraivan (ADBA Delegation Lead)",
+          "title": "Hospital Site Visit: Public Tertiary Hospital Guided Tour",
+          "leads": "Executives & Clinical Leads (Host Tertiary Hospital), Dr Anand Ponniraivan (ADBA Delegation Lead)",
           "description": "Behind-the-scenes guided tour focusing on clinical pathways, insurance-driven workflow, workforce management, and small-group discussions with department leads."
         },
         {
@@ -138,7 +138,7 @@
         {
           "time": "9:00 AM",
           "type": "Keynote",
-          "title": "Keynote Session 3: Bridging the Gap — How Digital Health and Telemedicine are Transforming Patient Care at Vinmec Da Nang",
+          "title": "Keynote Session 3: Bridging the Gap — How Digital Health and Telemedicine are Transforming Tertiary Patient Care",
           "description": "Case study on private tertiary care telemedicine networks, electronic medical records, and digital triage."
         },
         {
@@ -334,22 +334,22 @@
     {
       "dayNumber": 6,
       "dateString": "Friday 4 December 2026",
-      "shortTitle": "Vinmec Tech Center, Ba Na Hills & Gala Night",
-      "venue": "Vinmec International Hospital, Ba Na Hills & Marriott Courtyard",
+      "shortTitle": "Hospital Site Visit, Ba Na Hills & Gala Night",
+      "venue": "Accredited Medical Center, Ba Na Hills & Marriott Courtyard",
       "badge": "Clinical Capstone & Gala",
       "sessions": [
         {
           "time": "8:30 AM",
           "type": "Transfer",
-          "title": "Depart Hotel for Vinmec Hospital",
+          "title": "Depart Hotel for Hospital Site Visit",
           "description": "Coach transfer."
         },
         {
           "time": "9:00 AM",
           "type": "Site Visit",
-          "title": "Hospital Site Visit: Vinmec International Hospital & Advanced Medical Technology Center",
-          "leads": "Vinmec Clinical & Administrative Leadership, Dr Jemma Hogan (ADBA Delegation Lead)",
-          "description": "Comprehensive tour of JCI-accredited tertiary facilities, robotic surgery suites, telemedicine command hubs, and digital leadership discussions."
+          "title": "Hospital Site Visit: Advanced Medical Technology & Digital Health Center",
+          "leads": "Hospital Clinical & Administrative Leadership, Dr Jemma Hogan (ADBA Delegation Lead)",
+          "description": "Comprehensive tour of accredited tertiary facilities, robotic surgery suites, telemedicine command hubs, and digital leadership discussions."
         },
         {
           "time": "10:00 AM",
